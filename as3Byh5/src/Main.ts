@@ -88,7 +88,7 @@ class Main extends eui.UILayer {
             //加载皮肤主题配置文件,可以手动修改这个文件。替换默认皮肤。
             let theme = new eui.Theme("resource/default.thm.json", this.stage);
             theme.addEventListener(eui.UIEvent.COMPLETE, () => {
-                resolve();
+                resolve(0);
             }, this);
 
         })
@@ -134,16 +134,16 @@ class Main extends eui.UILayer {
         colorLabel.y = 80;
         this.addChild(colorLabel);
 
-        let textfield = new egret.TextField();
-        this.addChild(textfield);
-        textfield.alpha = 0;
-        textfield.width = stageW - 172;
-        textfield.textAlign = egret.HorizontalAlign.CENTER;
-        textfield.size = 24;
-        textfield.textColor = 0xffffff;
-        textfield.x = 172;
-        textfield.y = 135;
-        this.textfield = textfield;
+        let rm:RotateToMouse=new RotateToMouse(this.stage)
+        this.addChild(rm)
+
+        // let a=Math.tan(30)
+        // let b=Math.tan(30*Math.PI/180)
+
+        // a=Math.sin(30)
+        // b=Math.sin(30*Math.PI/180)
+
+        // a=Math.atan(0.577)*180/Math.PI
     }
 
 

@@ -157,7 +157,7 @@ var Main = (function (_super) {
             //加载皮肤主题配置文件,可以手动修改这个文件。替换默认皮肤。
             var theme = new eui.Theme("resource/default.thm.json", _this.stage);
             theme.addEventListener(eui.UIEvent.COMPLETE, function () {
-                resolve();
+                resolve(0);
             }, _this);
         });
     };
@@ -195,16 +195,13 @@ var Main = (function (_super) {
         colorLabel.x = 172;
         colorLabel.y = 80;
         this.addChild(colorLabel);
-        var textfield = new egret.TextField();
-        this.addChild(textfield);
-        textfield.alpha = 0;
-        textfield.width = stageW - 172;
-        textfield.textAlign = egret.HorizontalAlign.CENTER;
-        textfield.size = 24;
-        textfield.textColor = 0xffffff;
-        textfield.x = 172;
-        textfield.y = 135;
-        this.textfield = textfield;
+        var rm = new RotateToMouse(this.stage);
+        this.addChild(rm);
+        var a = Math.tan(30);
+        var b = Math.tan(30 * Math.PI / 180);
+        a = Math.sin(30);
+        b = Math.sin(30 * Math.PI / 180);
+        a = Math.atan(0.577) * 180 / Math.PI;
     };
     return Main;
 }(eui.UILayer));
