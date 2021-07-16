@@ -8,13 +8,17 @@
 		"libs/modules/promise/promise.js"
 	],
 	"game": [
+		"bin-debug/SanJiao/Example/Arrow.js",
 		"bin-debug/AssetAdapter.js",
-		"bin-debug/LoadingUI.js",
 		"bin-debug/Main.js",
 		"bin-debug/Platform.js",
 		"bin-debug/ThemeAdapter.js",
 		"bin-debug/SanJiao/TriangleFormula.js",
-		"bin-debug/SanJiao/Example/Arrow.js",
-		"bin-debug/SanJiao/Example/RotateToMouse.js"
+		"bin-debug/LoadingUI.js",
+		"bin-debug/SanJiao/Example/RotateToMouse.js",
+		"bin-debug/Wave/Ball.js",
+		"bin-debug/Wave/Bobbing.js",
+		"bin-debug/Wave/Pulse.js",
+		"bin-debug/Wave/Wave1.js"
 	]
 }

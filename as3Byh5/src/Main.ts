@@ -134,16 +134,30 @@ class Main extends eui.UILayer {
         colorLabel.y = 80;
         this.addChild(colorLabel);
 
-        let rm:RotateToMouse=new RotateToMouse(this.stage)
-        this.addChild(rm)
+        //三角函数
+        // let rm:RotateToMouse=new RotateToMouse(this.stage)
+        // this.addChild(rm)
 
-        // let a=Math.tan(30)
-        // let b=Math.tan(30*Math.PI/180)
+        //匀速波
+        // let bo:Bobbing=new Bobbing(this.stage)
+        // this.addChild(bo)
 
-        // a=Math.sin(30)
-        // b=Math.sin(30*Math.PI/180)
+        //线性波，向右
+        // let wave1:Wave1=new Wave1(this.stage)
+        // this.addChild(wave1)
 
-        // a=Math.atan(0.577)*180/Math.PI
+        //脉冲
+        let p:Pulse=new Pulse(this.stage)
+        this.addChild(p)
+        // let result=[]
+        // for(let i=0;i<=6;i+=0.1)
+        // {
+        //     let obj:any={}
+        //     obj.id=i+"度"
+        //     // obj.value=Math.sin(i)
+        //     obj.value=Math.cos(i)
+        //     result.push(obj)
+        // }
     }
 
 
