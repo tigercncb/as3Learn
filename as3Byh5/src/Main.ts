@@ -147,17 +147,16 @@ class Main extends eui.UILayer {
         // this.addChild(wave1)
 
         //脉冲
-        let p:Pulse=new Pulse(this.stage)
-        this.addChild(p)
-        // let result=[]
-        // for(let i=0;i<=6;i+=0.1)
-        // {
-        //     let obj:any={}
-        //     obj.id=i+"度"
-        //     // obj.value=Math.sin(i)
-        //     obj.value=Math.cos(i)
-        //     result.push(obj)
-        // }
+        // let p:Pulse=new Pulse(this.stage)
+        // this.addChild(p)
+
+        //正弦波
+        // let w2:Wave2=new Wave2(this.stage)
+        // this.addChild(w2)
+
+        let rd:Random=new Random(this.stage)
+        this.addChild(rd)
+ 
     }
 
 
