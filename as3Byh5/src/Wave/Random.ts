@@ -6,9 +6,9 @@ class Random extends egret.Sprite
     private angleY=0;
     private centerX=200;
     private centerY=200
-    private range=50;
-    private xspeed=.07
-    private yspeed=.11
+    private range=6;
+    private xspeed=.02
+    private yspeed=.06
     
     _stage
     constructor(stage)
@@ -23,7 +23,6 @@ class Random extends egret.Sprite
         this.addChild(this.ball)
         this.ball.x=0;
         this.addEventListener(egret.Event.ENTER_FRAME,this.onframe,this)
-
     }
     private onframe()
     {

@@ -138,7 +138,7 @@ class Main extends eui.UILayer {
         // let rm:RotateToMouse=new RotateToMouse(this.stage)
         // this.addChild(rm)
 
-        //匀速波
+        //平滑波 
         // let bo:Bobbing=new Bobbing(this.stage)
         // this.addChild(bo)
 
@@ -154,6 +154,7 @@ class Main extends eui.UILayer {
         // let w2:Wave2=new Wave2(this.stage)
         // this.addChild(w2)
 
+        //假随机运动，由两个角来确定
         let rd:Random=new Random(this.stage)
         this.addChild(rd)
  

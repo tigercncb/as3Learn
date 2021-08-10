@@ -8,6 +8,7 @@ class TriangleFormula
      * radians=degrees*Math.PI/180
      * degrees=radians*180/Math.PI
      * 
+     * 一：基本公式
      * 一个角相对的(opposite)边，相邻(adjacent)边
      * 备注：只适用于直角，非直角需要切成两个直角三角形
      * 1：正弦sine   一个角的正弦是这角的对边与斜边之比
@@ -27,6 +28,12 @@ class TriangleFormula
      *          弧度:radians=Math.atan2(y,x)
      *          angle=radians*180/Math.PI   例如 三角形在坐标系0点坐标 -153=Math.atan2(-1,-2)*180/Math.PI (注意：逆时针旋转，而不是从左边-1旋转)
      * 
+     * 
+     * 二、关系：
+     * sin30°=1/2, sin60°=√3/2  sin45°=√2/2 
+     * cos60=1/2    cos30°=√3/2 cos45°=√2/2
+     * 
+     * 锐角:sinX=cos(90°-X) 即：sinX+cos(90°-X)=1
      */
     constructor()
     {
