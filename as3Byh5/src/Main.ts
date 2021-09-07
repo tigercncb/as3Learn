@@ -116,10 +116,11 @@ class Main extends eui.UILayer {
 
 
         //三角函数
+        //图形跟随鼠标旋转
         // let rm:RotateToMouse=new RotateToMouse(this.stage)
         // this.addChild(rm)
 
-        //平滑波 
+        //匀速波 上下
         // let bo:Bobbing=new Bobbing(this.stage)
         // this.addChild(bo)
 
@@ -135,9 +136,13 @@ class Main extends eui.UILayer {
         // let w2:Wave2=new Wave2(this.stage)
         // this.addChild(w2)
 
-        //假随机运动，由两个角来确定
-        let rd:Random=new Random(this.stage)
-        this.addChild(rd)
+        //仿随机
+        // let rd:Random=new Random(this.stage)
+        // this.addChild(rd)
+
+        //圆形
+        let c:Circle=new Circle(this.stage)
+        this.addChild(c)
  
     }
 

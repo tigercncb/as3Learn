@@ -18,6 +18,7 @@
 		"bin-debug/LoadingUI.js",
 		"bin-debug/Wave/Ball.js",
 		"bin-debug/Wave/Bobbing.js",
+		"bin-debug/Wave/Circle.js",
 		"bin-debug/Wave/Pulse.js",
 		"bin-debug/Wave/Random.js",
 		"bin-debug/Wave/Wave1.js",
