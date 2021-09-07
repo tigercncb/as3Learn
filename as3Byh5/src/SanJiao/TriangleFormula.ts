@@ -3,7 +3,7 @@ class TriangleFormula
     /**
      * 三角函数相关：：：：：
      * 
-     * 度:degree(角的度数)    弧度:radian   角:angle
+     * 度:degrees(角的度数)    弧度:radian   角:angle
      * 转换公式：
      * radians=degrees*Math.PI/180
      * degrees=radians*180/Math.PI
