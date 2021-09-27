@@ -102,17 +102,17 @@ class Main extends eui.UILayer {
     protected createGameScene(): void {
         // let sky = this.createBitmapByName("bg_jpg");
         // this.addChild(sky);
-        let stageW = this.stage.stageWidth;
-        let stageH = this.stage.stageHeight;
+        // let stageW = this.stage.stageWidth;
+        // let stageH = this.stage.stageHeight;
         // sky.width = stageW;
         // sky.height = stageH;
 
-        let topMask = new egret.Shape();
-        topMask.graphics.beginFill(0x000000, 0.5);
-        topMask.graphics.drawRect(0, 0, stageW, 172);
-        topMask.graphics.endFill();
-        topMask.y = 33;
-        this.addChild(topMask);
+        // let topMask = new egret.Shape();
+        // topMask.graphics.beginFill(0x000000, 0.5);
+        // topMask.graphics.drawRect(0, 0, stageW, 172);
+        // topMask.graphics.endFill();
+        // topMask.y = 33;
+        // this.addChild(topMask);
 
 
         //三角函数
@@ -120,30 +120,38 @@ class Main extends eui.UILayer {
         // let rm:RotateToMouse=new RotateToMouse(this.stage)
         // this.addChild(rm)
 
-        //匀速波 上下
+        //3.5.1 匀速波 上下
         // let bo:Bobbing=new Bobbing(this.stage)
         // this.addChild(bo)
 
-        //线性波，向右
+        //3.5.2线性波，向右
         // let wave1:Wave1=new Wave1(this.stage)
         // this.addChild(wave1)
 
-        //脉冲
+        //3.5.3脉冲（缩放）
         // let p:Pulse=new Pulse(this.stage)
         // this.addChild(p)
 
-        //正弦波
+        //3.5.5正弦波（线条）
         // let w2:Wave2=new Wave2(this.stage)
         // this.addChild(w2)
 
-        //仿随机
+        //3.5.4 仿随机，两个角的波
         // let rd:Random=new Random(this.stage)
         // this.addChild(rd)
 
-        //圆形
-        let c:Circle=new Circle(this.stage)
-        this.addChild(c)
- 
+        //3.6圆形和椭圆
+        //3.6.1圆形运动
+        // let c:Circle=new Circle(this.stage)
+        // this.addChild(c)
+
+        //3.6.2椭圆运动
+        // let oval:Oval=new Oval(this.stage)
+        // this.addChild(oval)
+
+        //3.8两点间的距离
+        let dist:Distance=new Distance(this.stage)
+        this.addChild(dist)
     }
 
 

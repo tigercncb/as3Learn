@@ -2,11 +2,14 @@ class TriangleFormula
 {
     /**
      * 三角函数相关：：：：：
-     * 
+     * 3.1三角学
      * 度:degrees(角的度数)    弧度:radian   角:angle
      * 转换公式：
      * radians=degrees*Math.PI/180
      * degrees=radians*180/Math.PI
+     * 3.3三角函数
+     * 测量：
+     * 一个30度角的正玄，对面的测量值为1，斜边为2，领边则为1.73。因此可以说30度角的正弦是1/2=0.5，余弦是1.73/2=0.865
      * 
      * 一：基本公式
      * 一个角相对的(opposite)边，相邻(adjacent)边
@@ -20,7 +23,7 @@ class TriangleFormula
      * 4：反正弦arcsine   提供一个比例，得到一个角（弧度）
      *      angle=Math.asin(a)*180/Math.PI   例如：30=Math.asin(0.5)*180/Math.PI   (弧度转换成角度以方便查看)
      * 5：反余弦arccosine   提供一个比例，得到一个角（弧度）
-     *      angle=Math.acos(a)*180?Math.PI  例如：30=Math.acos(0.865)*180/Math.PI 
+     *      angle=Math.acos(a)*180/Math.PI  例如：30=Math.acos(0.865)*180/Math.PI 
      * 6：反正切arctangent  只需要提供对边和领边的比例，就会得到那个角度,a:正切值
      *     6.1数学式 
      *          angle=Math.atan(a)*180/Math.PI      例如 30=Math.atan(0.577)*180/Math.PI
@@ -37,6 +40,5 @@ class TriangleFormula
      */
     constructor()
     {
-        
     }
 }

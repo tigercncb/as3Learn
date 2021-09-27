@@ -4,7 +4,7 @@ class Wave1 extends egret.Sprite
     private ball:Ball
     private angle:number=0;
     private centerY=200
-    private range=50
+    private range=50//范围
     private xspeed=1;
     private yspeed=.05
 

@@ -6,7 +6,7 @@ class Random extends egret.Sprite
     private angleY=0;
     private centerX=200;
     private centerY=200
-    private range=6;
+    private range=56;
     private xspeed=.02
     private yspeed=.06
     

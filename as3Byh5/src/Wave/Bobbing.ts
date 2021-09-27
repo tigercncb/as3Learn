@@ -30,22 +30,12 @@ class Bobbing extends egret.Sprite
     //     this.ball.y=this._stage.stageHeight/2+Math.sin(this.angle)*50;
     //     this.angle+=.1;
     // }
-    private bally:number=0
-    private ball2y:number=0
+    // private bally:number=0
+    // private ball2y:number=0
     onframe()
     {
         this.ball.y=this._stage.stageHeight/2+Math.sin(this.angle)*50;
         this.ball2.y=this._stage.stageHeight/2+Math.cos(this.angle)*50;
         this.angle+=.05;
-        if(this.ball.y>this.bally)
-        {
-            this.bally=this.ball.y
-            console.log("ballY:"+this.bally)
-        }
-        if(this.ball2.y>this.ball2y)
-        {
-            this.ball2y=this.ball2.y
-            console.log("ball2Y:"+this.ball2y)
-        }
     }
 }
