@@ -100,22 +100,10 @@ class Main extends eui.UILayer {
      * Create scene interface
      */
     protected createGameScene(): void {
-        // let sky = this.createBitmapByName("bg_jpg");
-        // this.addChild(sky);
-        // let stageW = this.stage.stageWidth;
-        // let stageH = this.stage.stageHeight;
-        // sky.width = stageW;
-        // sky.height = stageH;
-
-        // let topMask = new egret.Shape();
-        // topMask.graphics.beginFill(0x000000, 0.5);
-        // topMask.graphics.drawRect(0, 0, stageW, 172);
-        // topMask.graphics.endFill();
-        // topMask.y = 33;
-        // this.addChild(topMask);
+        
 
 
-        //三角函数
+        //第三张-------------三角函数----------------------------
         //图形跟随鼠标旋转
         // let rm:RotateToMouse=new RotateToMouse(this.stage)
         // this.addChild(rm)
@@ -150,8 +138,25 @@ class Main extends eui.UILayer {
         // this.addChild(oval)
 
         //3.8两点间的距离
-        let dist:Distance=new Distance(this.stage)
-        this.addChild(dist)
+        // let dist:Distance=new Distance(this.stage)
+        // this.addChild(dist)
+
+
+        //第五张-------------速度与加速度----------------------------
+        // let vel1=new Velocity1(this.stage)
+        // this.addChild(vel1)
+        // let vel2=new Velocity2(this.stage)
+        // this.addChild(vel2)
+
+        //5.1.4角速度
+        // let va=new VelocityAngle(this.stage)
+        // this.addChild(va)
+
+        //5.1.4向量加法
+        let fm=new FollowMouse(this.stage)
+        this.addChild(fm)
+
+
     }
 
 

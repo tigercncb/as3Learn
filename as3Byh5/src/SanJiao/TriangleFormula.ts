@@ -3,7 +3,7 @@ class TriangleFormula
     /**
      * 三角函数相关：：：：：
      * 3.1三角学
-     * 度:degrees(角的度数)    弧度:radian   角:angle
+     * 度:degrees(角的度数)    弧度:radians   角:angle
      * 转换公式：
      * radians=degrees*Math.PI/180
      * degrees=radians*180/Math.PI
@@ -27,7 +27,7 @@ class TriangleFormula
      * 6：反正切arctangent  只需要提供对边和领边的比例，就会得到那个角度,a:正切值
      *     6.1数学式 
      *          angle=Math.atan(a)*180/Math.PI      例如 30=Math.atan(0.577)*180/Math.PI
-     *     6.2程序式 重点（常用）：程序中的反正切   
+     *     6.2程序式 <重点>（常用）：程序中的反正切   
      *          弧度:radians=Math.atan2(y,x)
      *          angle=radians*180/Math.PI   例如 三角形在坐标系0点坐标 -153=Math.atan2(-1,-2)*180/Math.PI (注意：逆时针旋转，而不是从左边-1旋转)
      * 

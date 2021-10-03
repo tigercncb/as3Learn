@@ -29,9 +29,6 @@ class Distance extends egret.Sprite
         let dy=sp.y-sp2.y;
         let dist=Math.sqrt(dx*dx+dy*dy)
         console.log("距离："+dist)
-
-        let lb:eui.Label=new eui.Label;
-        let t:egret.TextField=new egret.TextField;
-        t.
+        
     }
 }
