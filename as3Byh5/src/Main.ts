@@ -101,7 +101,7 @@ class Main extends eui.UILayer {
      */
     protected createGameScene(): void {
         
-
+        //数学公式
 
         //第三张-------------三角函数----------------------------
         //图形跟随鼠标旋转
